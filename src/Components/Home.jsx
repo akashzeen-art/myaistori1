@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import styles from "./Home.module.css";
-import herovideo from "../assets/Images/herovideo.mp4";
+const HERO_VIDEO_URL = "https://vz-347babc2-229.b-cdn.net/f608bb0a-b3a1-4cd2-aa8d-2e170a217380/play_480p.mp4";
 import { useLanguage } from "../contexts/LanguageContext";
 import { translations } from "../translations/translations";
 import Navbar from "./Navbar";
@@ -66,7 +66,7 @@ const Home = () => {
       <section className={styles.heroSection} aria-label="Hero">
         <video
           className={styles.videoBackground}
-          src={herovideo}
+          src={HERO_VIDEO_URL}
           autoPlay
           muted
           loop

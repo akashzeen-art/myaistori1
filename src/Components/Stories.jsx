@@ -3,7 +3,7 @@ import StoryModal from "./StoryModal";
 import { useLanguage } from "../contexts/LanguageContext";
 import { translations } from "../translations/translations";
 import styles from "./Stories.module.css";
-import herovideo from "../assets/Images/herovideo.mp4";
+const HERO_VIDEO_URL = "https://vz-347babc2-229.b-cdn.net/f608bb0a-b3a1-4cd2-aa8d-2e170a217380/play_480p.mp4";
 import Navbar from "./Navbar";
 
 // Import all category images
@@ -389,7 +389,7 @@ const Stories = () => {
   return (
     <>
       <Navbar />
-      <video className={styles.videoBackground} src={herovideo} autoPlay muted loop playsInline />
+      <video className={styles.videoBackground} src={HERO_VIDEO_URL} autoPlay muted loop playsInline />
       <div className={styles.videoOverlay} />
       <div className={styles.storiesContainer}>
       {/* Header Section */}

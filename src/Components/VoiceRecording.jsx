@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import styles from "./VoiceRecording.module.css";
 import mikeVideo from "../assets/Images/mikevideo.mp4";
 import voiceVideo from "../assets/Images/video3.mp4";
-import herovideo from "../assets/Images/herovideo.mp4";
+const HERO_VIDEO_URL = "https://vz-347babc2-229.b-cdn.net/f608bb0a-b3a1-4cd2-aa8d-2e170a217380/play_480p.mp4";
 import { FaMicrophone, FaEdit, FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { sendStoryPrompt } from "../api/stories";
 import StoryModal from "./StoryModal";
@@ -463,7 +463,7 @@ const VoiceRecording = ({ onBack }) => {
   return (
     <>
       <Navbar />
-      <video className={styles.videoBackground} src={herovideo} autoPlay muted loop playsInline />
+      <video className={styles.videoBackground} src={HERO_VIDEO_URL} autoPlay muted loop playsInline />
       <div className={styles.videoOverlay} />
       <div className={styles.voicePage}>
       <button className={styles.backBtn} onClick={onBack} aria-label="Back">
