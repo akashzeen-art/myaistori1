@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Local env
+.env
+.env.local
+.env.*.local
+
+# Logs and cache
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Large assets (exceed GitHub 100MB limit – host on CDN or use Git LFS)
+MyAiStoriDist.zip
+src/assets/Images/herovideo.mp4
+src/assets/Images/herovideo2.mp4
+src/assets/Images/herovideo3.mp4
+src/assets/Images/herovideo4.mp4
