@@ -1,6 +1,8 @@
 import React, { useRef, useEffect } from "react";
 import "./Preloader.css";
-const HERO_VIDEO_URL = "https://vz-347babc2-229.b-cdn.net/f608bb0a-b3a1-4cd2-aa8d-2e170a217380/play_480p.mp4";
+
+const HERO_VIDEO_URL =
+  "https://vz-347babc2-229.b-cdn.net/f608bb0a-b3a1-4cd2-aa8d-2e170a217380/play_480p.mp4";
 
 const Preloader = ({ fadeOut }) => {
   const videoRef = useRef(null);
