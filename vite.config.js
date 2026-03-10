@@ -1,8 +1,25 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import { copyFileSync, existsSync } from 'fs'
+import { join } from 'path'
+
+// After build, copy index.html to 404.html so hosts that serve 404.html for missing paths load the SPA
+function copyIndexTo404() {
+  return {
+    name: 'copy-404',
+    closeBundle() {
+      const outDir = join(process.cwd(), 'dist')
+      const index = join(outDir, 'index.html')
+      const notFound = join(outDir, '404.html')
+      if (existsSync(index)) {
+        copyFileSync(index, notFound)
+      }
+    },
+  }
+}
 
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react(), copyIndexTo404()],
   base: '/',
   build: {
     outDir: 'dist',
