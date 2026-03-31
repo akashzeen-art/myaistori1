@@ -169,6 +169,30 @@
   transform: translateX(5px);
 }
 
+.termsButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  color: #ffffff !important;
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+  font-size: 0.85rem;
+  font-weight: 400;
+  text-decoration: none;
+  opacity: 0.9;
+  transition: color 0.3s ease;
+}
+
+.termsButton:hover {
+  color: #ffffff;
+  background: linear-gradient(90deg, #001f3f, #003366);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #ffffff;
+  transform: translateX(5px);
+}
+
 .status {
   display: flex;
   align-items: center;

@@ -13,6 +13,7 @@ import FAQ from './Components/FAQ'
 import Pricing from './Components/Pricing'
 import VoiceRecording from './Components/VoiceRecording'
 import Preloader from './Components/Preloader'
+import TermsOfService from './Components/TermsOfService'
 
 function App() {
   return (
@@ -70,6 +71,7 @@ function AppContent() {
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/faq" element={<FAQ />} />
         <Route path="/voice" element={<VoiceRecording />} />
+        <Route path="/terms-of-service" element={<TermsOfService />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
       <Footer />

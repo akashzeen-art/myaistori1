@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styles from "./Footer.module.css";
 import logo from "../assets/Images/logo.png";
 import { useLanguage } from "../contexts/LanguageContext";
@@ -83,7 +84,9 @@ const Footer = () => {
           <p className={styles.copyright}>© {new Date().getFullYear()} MyAiStori. {t.footer.copyright}</p>
           <div className={styles.bottomLinks}>
             <a href="/faq">{t.footer.privacyPolicy}</a>
-            <a href="/faq">{t.footer.termsOfService}</a>
+            <Link to="/terms-of-service" className={styles.termsButton}>
+              {t.footer.termsOfService}
+            </Link>
             <span className={styles.status}>
               <span className={styles.onlineDot}></span> {t.footer.allServicesOnline}
             </span>
