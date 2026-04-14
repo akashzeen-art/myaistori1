@@ -7,7 +7,7 @@ import { FaMicrophone, FaEdit, FaArrowLeft, FaArrowRight } from "react-icons/fa"
 import { sendStoryPrompt } from "../api/stories";
 import StoryModal from "./StoryModal";
 import { useLanguage } from "../contexts/LanguageContext";
-import { translations } from "../translations/translations";
+import { translations } from "../translations/index";
 import Navbar from "./Navbar";
 
 // Import all story images

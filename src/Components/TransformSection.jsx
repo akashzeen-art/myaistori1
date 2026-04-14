@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./TransformSection.module.css";
 import { useLanguage } from "../contexts/LanguageContext";
-import { translations } from "../translations/translations";
+import { translations } from "../translations/index";
 
 const TransformSection = () => {
   const { language } = useLanguage();

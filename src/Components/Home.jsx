@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import styles from "./Home.module.css";
 const HERO_VIDEO_URL = "https://vz-347babc2-229.b-cdn.net/f608bb0a-b3a1-4cd2-aa8d-2e170a217380/play_480p.mp4";
 import { useLanguage } from "../contexts/LanguageContext";
-import { translations } from "../translations/translations";
+import { translations } from "../translations/index";
 import Navbar from "./Navbar";
 import TopStories from "./TopStories";
 import FeaturedStories from "./FeaturedStories";

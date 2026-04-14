@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./FAQ.module.css";
 import { useLanguage } from "../contexts/LanguageContext";
-import { translations } from "../translations/translations";
+import { translations } from "../translations/index";
 
 const FAQ = () => {
   const { language } = useLanguage();

@@ -3,7 +3,7 @@ import styles from "./Navbar.module.css";
 import logo from "../assets/Images/logo.png";
 import { FaBell, FaUserCircle } from "react-icons/fa";
 import { useLanguage } from "../contexts/LanguageContext";
-import { translations } from "../translations/translations";
+import { translations } from "../translations/index";
 import AuthModal from "./AuthModal";
 import ProfileModal from "./ProfileModal";
 
@@ -192,6 +192,33 @@ const Navbar = () => {
                         onClick={() => changeLanguage("AR")}
                       >
                         AR
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        type="button"
+                        className={`dropdown-item ${styles.dropdownItem}`}
+                        onClick={() => changeLanguage("PL")}
+                      >
+                        PL
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        type="button"
+                        className={`dropdown-item ${styles.dropdownItem}`}
+                        onClick={() => changeLanguage("PT")}
+                      >
+                        PT
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        type="button"
+                        className={`dropdown-item ${styles.dropdownItem}`}
+                        onClick={() => changeLanguage("CS")}
+                      >
+                        CS
                       </button>
                     </li>
                   </ul>

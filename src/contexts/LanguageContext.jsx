@@ -17,7 +17,7 @@ export const LanguageProvider = ({ children }) => {
     // Load saved language from localStorage
     try {
       const savedLang = localStorage.getItem('appLanguage');
-      if (savedLang && ['EN', 'FR', 'ES', 'AR'].includes(savedLang)) {
+      if (savedLang && ['EN', 'FR', 'ES', 'AR', 'PL', 'PT', 'CS'].includes(savedLang)) {
         setLanguage(savedLang);
       }
     } catch (e) {
@@ -26,7 +26,7 @@ export const LanguageProvider = ({ children }) => {
   }, []);
 
   const changeLanguage = (lang) => {
-    if (['EN', 'FR', 'ES', 'AR'].includes(lang)) {
+    if (['EN', 'FR', 'ES', 'AR', 'PL', 'PT', 'CS'].includes(lang)) {
       setLanguage(lang);
       try {
         localStorage.setItem('appLanguage', lang);

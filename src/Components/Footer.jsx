@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import styles from "./Footer.module.css";
 import logo from "../assets/Images/logo.png";
 import { useLanguage } from "../contexts/LanguageContext";
-import { translations } from "../translations/translations";
+import { translations } from "../translations/index";
 
 const Footer = () => {
   const { language } = useLanguage();

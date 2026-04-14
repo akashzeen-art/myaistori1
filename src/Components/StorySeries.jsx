@@ -5,7 +5,7 @@ import fantasyJpg from "../assets/Images/fantasy.jpg";
 import scifiJpg from "../assets/Images/scifi.jpg";
 import { Link } from "react-router-dom";
 import { useLanguage } from "../contexts/LanguageContext";
-import { translations } from "../translations/translations";
+import { translations } from "../translations/index";
 
 const StorySeries = () => {
   const { language } = useLanguage();

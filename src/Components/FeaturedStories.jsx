@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import StoryModal from "./StoryModal";
 import { useLanguage } from "../contexts/LanguageContext";
-import { translations } from "../translations/translations";
+import { translations } from "../translations/index";
 import styles from "./FeaturedStories.module.css";
 
 // Import featured story images

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styles from "./ProfileModal.module.css";
 import { FaUser, FaCog, FaSignOutAlt, FaEdit, FaCamera } from "react-icons/fa";
 import { useLanguage } from "../contexts/LanguageContext";
-import { translations } from "../translations/translations";
+import { translations } from "../translations/index";
 
 const ProfileModal = ({ isOpen, onClose }) => {
   const { language } = useLanguage();

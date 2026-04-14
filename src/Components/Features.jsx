@@ -6,7 +6,7 @@ import {
 } from "react-icons/fa";
 import { FaWandMagicSparkles, FaWaveSquare } from "react-icons/fa6";
 import { useLanguage } from "../contexts/LanguageContext";
-import { translations } from "../translations/translations";
+import { translations } from "../translations/index";
 const HERO_VIDEO_URL = "https://vz-347babc2-229.b-cdn.net/f608bb0a-b3a1-4cd2-aa8d-2e170a217380/play_480p.mp4";
 import Navbar from "./Navbar";
 
