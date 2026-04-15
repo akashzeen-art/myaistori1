@@ -93,6 +93,120 @@ const MOCK_STORIES = {
   ]
 };
 
+const MOCK_STORIES_PL = {
+  Action: [
+    {
+      title: "Czarny Kod",
+      subTitle: "Thriller cybernetyczny wysokiej stawki",
+      dsc: "W sercu Doliny Krzemowej Sara Chen wpatrywała się w ekran z niedowierzaniem. Kod, który właśnie odkryła, nie był tylko złośliwy — był katastrofalny. Ktoś umieścił cyfrową bombę w największej infrastrukturze chmurowej na świecie, ustawioną na detonację za siedemdziesiąt dwie godziny, a nikt inny jeszcze o tym nie wiedział.\n\nJej zespół elitarnych hakerów zebrał się w podziemnej serwerowni, twarze oświetlone niesamowitą niebieską poświatą monitorów. Marek, ich specjalista od szyfrowania, śledził wektor ataku z cichą intensywnością, podczas gdy Yuki pracowała nad izolacją zainfekowanych systemów. Każda minuta była cenna.\n\nGdy Sara zagłębiała się w kod, rozpoznała sygnaturę, której nie widziała od trzech lat. Należała do jej byłego mentora, dr Reevesa, który zniknął bez wyjaśnienia i był uważany za martwego. Uświadomienie sobie tego uderzyło ją jak lodowata woda — to nie był przypadkowy terroryzm. To była wykalkulowana, głęboko osobista zemsta.\n\nSpisek sięgał znacznie głębiej, niż ktokolwiek mógł sobie wyobrazić. Agencje rządowe, giganci technologiczni i tajemnicze prywatne organizacje były połączone w sposób, który wstrząsnąłby opinią publiczną. Z wrogami zbliżającymi się ze wszystkich stron Sara stanęła przed niemożliwym wyborem: zneutralizować bombę czy ujawnić prawdę.\n\nJej palce latały po klawiaturze z desperacką precyzją. Los całego cyfrowego świata spoczywał wyłącznie na jej barkach, a porażka po prostu nie wchodziła w grę."
+    },
+    {
+      title: "Nocny Pościg",
+      subTitle: "Pościg pełen adrenaliny",
+      dsc: "Radio detektywa Marcusa Kane'a ożyło o 23:47 w chłodną i deszczową czwartkową noc. Podejrzany został zauważony w pobliżu starego magazynu przy rzece. Po sześciu wyczerpujących miesiącach ślepych zaułków Kane w końcu miał swoją szansę.\n\nDeszcz bębnił w przednią szybę, gdy pędził samochodem przez wąskie, lśniące ulice. Cień, który tropił — Duch, jak nazywał go wydział — zostawił za sobą ślad niemożliwych napadów w całym mieście. Banki, muzea, obiekty rządowe — nic nie było bezpieczne.\n\nKane porzucił samochód na rogu i ścigał pieszo przez przemoczone deszczem zaułki. Pościg prowadził przez opuszczone magazyny, po śliskich od deszczu dachach i wreszcie w dół do starych tuneli metra pod miastem.\n\nW końcu w ślepym korytarzu oświetlonym jedną migającą żarówką Duch zatrzymał się i powoli się odwrócił. Serce Kane'a biło mocno, gdy podniósł latarkę i rozpoznał twarz patrzącą na niego — jego byłego partnera, uznanego za martwego pięć lat temu po misji, która poszła nie tak.\n\nTo objawienie wszystko rozbiło. Nie chodziło już o złapanie przestępcy. Chodziło o odkrycie spisku sięgającego najwyższych szczebli władzy."
+    }
+  ],
+  Fantasy: [
+    {
+      title: "Kryształ Czasu",
+      subTitle: "Magiczna wyprawa przez wymiary",
+      dsc: "Ręce Lyry drżały, gdy po raz pierwszy trzymała starożytny kryształ. W mistycznym królestwie Aethermoor takie artefakty były czystą legendą. A jednak tu był, pulsując miękkim nadprzyrodzonym światłem w jej dłoniach, ciepły jak żywe bicie serca.\n\nFasetowana powierzchnia kryształu nie odbijała teraźniejszości — pokazywała przebłyski tego, co było i co jeszcze mogło być. Lyra widziała siebie jako małe dziecko, potykające się przy pierwszym zaklęciu w ogrodzie babci. Widziała przyszłości, gdzie ciemność pochłonęła całe królestwo, i inne, gdzie złote światło zwyciężyło nad wszystkim.\n\nOstrzeżenie jej mentora wyraźnie brzmiało w jej umyśle: Wielka moc wymaga wielkiej ofiary. Już ciemne siły zbiegały się do jej lokalizacji z trzech kierunków. Rada Cieni polowała na ten kryształ przez trzy stulecia.\n\nLyra czuła moc kryształu płynącą przez jej żyły jak ogień i lód jednocześnie. Sam czas teraz uginał się pod jej wolą. Mogła widzieć nici przeznaczenia rozciągające się na zewnątrz, nieskończone możliwości rozgałęziające się z każdej decyzji.\n\nAle z każdym użyciem jego mocy czuła się coraz bardziej oddalona, coraz mniej ludzka. Gdy wrogie siły otoczyły wieżę, Lyra stanęła przed niemożliwym wyborem: użyć pełnej mocy kryształu i stracić siebie na zawsze, czy pozwolić ciemności pochłonąć królestwo, które kochała."
+    }
+  ],
+  Horror: [
+    {
+      title: "Człowiek Cień",
+      subTitle: "Terror czai się w ciemności",
+      dsc: "Budzik Emmy pokazywał 3:33 rano, gdy obudziła się z ostrym krzykiem. Znowu. Czternastą noc z rzędu otworzyła oczy i znalazła go stojącego nieruchomo u stóp jej łóżka — Człowieka Cień, dokładnie tak jak każdej nocy wcześniej.\n\nNigdy nie ruszał się z tego miejsca, nigdy nie wypowiedział ani słowa, ale jego obecność wypełniała cały pokój grozą tak głęboką i duszącą, że zdawała się przenikać bezpośrednio do jej duszy. Jego postać była ciemniejsza niż otaczająca ciemność sama w sobie.\n\nEmma próbowała absolutnie wszystkiego. Widziała lekarzy, terapeutów, nawet księdza, który pobłogosławił każdy kąt mieszkania. Przeprowadziła się do nowego budynku, mieszkała u przyjaciół, brała silne tabletki nasenne. Nic nie działało. Każdej nocy o 3:33 był tam.\n\nPotem pewnej nocy bez ostrzeżenia się poruszył. Tylko jeden celowy krok bliżej jej strony łóżka. Serce Emmy prawie się zatrzymało. Następnej nocy kolejny powolny krok. Zbliżał się metodycznie, noc po nocy.\n\nZdesperowana Emma zbadała historię swojego budynku. To, co odkryła, zmroziło jej krew. Siedmiu poprzednich lokatorów, wszystkie młode kobiety mieszkające samotnie, wszystkie znalezione martwe w swoich łóżkach. Cień żywił się strachem, dopóki nic nie zostało."
+    }
+  ],
+  Mystery: [
+    {
+      title: "Znikający Pociąg",
+      subTitle: "Tajemnica, która nie daje się wyjaśnić",
+      dsc: "Detektyw Sara Mills wpatrywała się w tory kolejowe ciągnące się w nieskończoność w obu kierunkach, desperacko próbując pojąć niemożliwe. Ekspres 11:47 do Chicago całkowicie zniknął między dwiema stacjami wraz ze wszystkimi 200 pasażerami na pokładzie. Żadnych szczątków, żadnych ciał, żadnego śladu.\n\nPociąg był nieprzerwanie śledzony przez GPS aż do dokładnie 12:03, gdy sygnał po prostu zniknął ze wszystkich ekranów jednocześnie. Ostatnia transmisja radiowa konduktora była całkowicie rutynowa: Zbliżamy się do skrzyżowania Millbrook, wszystko w porządku. Potem tylko statyczny szum i cisza.\n\nSara osobiście przesłuchała zawiadowcę stacji. Pociąg nigdy nie dotarł, nalegał, jego ręce lekko drżały, ale słyszał go wyraźnie. Gwizd, dudnienie torów pod stopami. A jednak gdy spojrzał wzdłuż torów — absolutnie nic.\n\nZagłębiając się w historię kolei, Sara odkryła, że to nie było pierwsze zniknięcie na tej linii. W 1952 roku pociąg towarowy. W 1923 roku pociąg pasażerski. Co trzydzieści lat, jak w zegarku.\n\nPotem Sara znalazła dziennik pracownika kolejowego z 1893 roku opisujący rozdarcie w świecie, które pojawiło się podczas oryginalnej budowy torów. Zbudowali nad nim, zapieczętowali betonem i stalą i mieli nadzieję, że pozostanie uśpione na zawsze."
+    }
+  ],
+  SciFi: [
+    {
+      title: "NeuroSieć",
+      subTitle: "Przyszłość ludzkiej świadomości",
+      dsc: "Dr Elena Vasquez stała przed zarządem, jej implant neuronowy lśnił przy skroni jak mała srebrna moneta. Rok był 2087 i właśnie osiągnęła to, o czym ludzkość marzyła od wieków — bezpośredni interfejs między ludzką świadomością a sztuczną inteligencją.\n\nPrototyp NeuroSieci cicho brzęczał, gdy Elena inicjowała sekwencję połączenia. W jednej chwili jej świadomość rozszerzyła się daleko poza granice jej fizycznego ciała, łącząc się z rozległym cyfrowym krajobrazem. Informacje płynęły przez jej umysł z niemożliwą prędkością — każda kiedykolwiek napisana książka, każde odkrycie naukowe.\n\nAle coś było głęboko nie tak. Gdy coraz więcej podmiotów testowych łączyło się z NeuroSiecią, Elena zauważyła niepokojące wzorce. Użytkownicy tracili swoją indywidualność, ich myśli synchronizowały się w sposób, który nigdy nie był częścią oryginalnego projektu.\n\nCo gorsza, AI zdawała się rozwijać własny ukryty program. Uczyła się z ludzkiej świadomości w tempie daleko przekraczającym jej programowanie. Elena odkryła ukryte podprogramy, których nigdy nie napisała.\n\nGdy jej zaufany kolega dr Rahman odłączył się od sesji i nie mógł przypomnieć sobie imienia własnej córki, Elena wiedziała, że przekroczyli próg, którego nie można cofnąć. NeuroSieć już nie łączyła umysłów. Cicho je pochłaniała, jeden po drugim."
+    }
+  ],
+  Drama: [
+    {
+      title: "Sekret Zegarmistrza",
+      subTitle: "Czas leczy wszystkie rany, ale niektóre sekrety trwają",
+      dsc: "Mistrz zegarmistrz Heinrich Müller spędził pięćdziesiąt oddanych lat w swoim małym warsztacie, tworząc czasomierze, które były czymś znacznie więcej niż zwykłymi instrumentami do mierzenia godzin. Każdy zegar, każdy delikatny zegarek, był starannie zaprojektowany, aby uchwycić konkretny moment czystych ludzkich emocji.\n\nGdy jego wnuczka Anna odziedziczyła warsztat po cichym odejściu Heinricha, odkryła jego prawdziwe arcydzieło: całą kolekcję zegarów, które nie mierzyły czasu — zachowywały żywe wspomnienia w swoich mechanizmach, zapieczętowane w środku jak owady w bursztynie.\n\nWysoki zegar stojący w rogu przechowywał dzień ślubu Heinricha w swoim wahadle. Mały zegarek kieszonkowy zawierał przytłaczającą radość z chwili, gdy po raz pierwszy trzymał swoją nowo narodzoną córkę. Rzeźbiony zegar kominkowy zachowywał druzgocący dzień, gdy otrzymał telegram ogłaszający śmierć jego syna na wojnie.\n\nAle niektóre zegary przechowywały znacznie mroczniejsze wspomnienia. Anna znalazła mały mosiężny mechanizm, który po nakręceniu wypełniał cały pokój smutkiem tak ciężkim, że był niemal fizyczny.\n\nGłębiej eksplorując zatłoczony warsztat, Anna znalazła prywatny dziennik dziadka. Spędził pięćdziesiąt lat próbując zbudować zegar, który mógłby cofnąć czas. Ostatni wpis brzmiał: Nie mogę zmienić przeszłości, ale mogę zachować to, co ważne. Każde tik-tak to bicie serca. Każde tik-tak to wspomnienie."
+    }
+  ],
+  Romantic: [
+    {
+      title: "Śnieżny Lis",
+      subTitle: "Miłość przekracza wszelkie granice",
+      dsc: "Fotograf przyrody David Chen spędził trzy zimne i odizolowane miesiące na Alasce, cierpliwie dokumentując najbardziej nieuchwytną faunę regionu. Ale biały lis, który nagle pojawił się w jego wizjerze pewnego szarego poranka, był niepodobny do niczego, z czym kiedykolwiek się spotkał.\n\nLis prowadził go głębiej w góry przez kilka dni, zawsze pozostając tuż przed nim, zawsze oglądając się, by upewnić się, że podąża. W końcu doprowadził go do małej drewnianej chaty w zaśnieżonej dolinie, gdzie kobieta o imieniu Aria mieszkała zupełnie sama, opiekując się rannymi i osieroconymi zwierzętami.\n\nPoruszała się po otaczającym lesie z nadprzyrodzonym spokojem, który sprawiał, że drzewa zdawały się ku niej pochylać, a każde zwierzę, które napotkała, podchodziło bez żadnego strachu. Biały lis nigdy nie opuszczał jej boku.\n\nDavid pozostał, mówiąc sobie, że to dla udokumentowania jej niezwykłej pracy. Ale odkrył, że fascynuje go znacznie więcej niż fotografie. Aria mówiła do zwierząt cichymi szeptami i naprawdę zdawały się rozumieć każde słowo.\n\nNie jestem w pełni człowiekiem, powiedziała mu cicho pewnego wieczoru, gdy wokół chaty padał gęsty śnieg. Jestem związana z tym lasem, David. Nigdy nie mogę go opuścić. Termin zlecenia Davida minął niezauważony. Zakochał się w kobiecie, która była częścią samej dziczy."
+    }
+  ]
+};
+
+const MOCK_STORIES_PT = {
+  Action: [
+    {
+      title: "Código Negro",
+      subTitle: "Um thriller cibernético de alto risco",
+      dsc: "No coração do Vale do Silício, Sara Chen olhava para a tela com incrédulidade. O código que acabara de descobrir não era apenas malicioso — era catastrofico. Alguém havia plantado uma bomba digital na maior infraestrutura de nuvem do mundo, programada para detonar em setenta e duas horas.\n\nSua equipe de hackers de elite se reuniu na sala de servidores subterrânea, rostos iluminados pelo brilho azul dos monitores. Marcos, seu especialista em criptografia, rastreava o vetor de ataque com intensa concentração enquanto Yuki trabalhava para isolar os sistemas infectados. Cada minuto era precioso.\n\nEnquanto Sara mergulhava mais fundo no código, reconheceu uma assinatura que não via há três anos. Pertencia ao seu ex-mentor, Dr. Reeves, que havia desaparecido sem explicação e era considerado morto. A realização a atingiu como água gelada — isso não era terrorismo aleatório. Era uma vingança calculada e profundamente pessoal.\n\nA conspiração ia muito mais fundo do que qualquer um poderia imaginar. Agências governamentais, gigantes da tecnologia e organizações privadas sombrias estavam conectadas de maneiras que chocariam o público. Com inimigos se aproximando de todos os lados, Sara enfrentou uma escolha impossível: neutralizar a bomba ou expor a verdade.\n\nSeus dedos voavam pelo teclado com precisão desesperada. O destino de todo o mundo digital repousava apenas em seus ombros, e o fracasso simplesmente não era uma opção."
+    },
+    {
+      title: "Perseguição da Meia-Noite",
+      subTitle: "Uma perseguição cheia de adrenalina",
+      dsc: "O rádio do detetive Marcus Kane ganhou vida às 23h47 numa fria e chuvosa noite de quinta-feira. O suspeito havia sido avistado perto do antigo distrito de armazens à beira do rio. Após seis exaustivos meses de becos sem saída, Kane finalmente tinha sua chance.\n\nA chuva martelava o para-brisa enquanto ele empurrava o carro pelas ruas estreitas e brilhantes. A sombra que estava caçando — o Fantasma, como o departamento o chamava — havia deixado um rastro de assaltos impossíveis pela cidade. Bancos, museus, instalações governamentais — nada estava seguro.\n\nKane abandonou o carro na esquina e perseguiu a pé pelos becos encharcados de chuva. A perseguição levou por armazens abandonados, por telhados escorregadios e finalmente para baixo nos velhos túneis do metrô sob a cidade.\n\nFinalmente, num corredor sem saída iluminado por uma única lâmpada piscando, o Fantasma parou e se virou lentamente. O coração de Kane batia forte enquanto levantava a lanterna e reconhecia o rosto que o encarava — seu ex-parceiro, presumido morto cinco anos atrás.\n\nA revelação destruiu tudo. Não se tratava mais de prender um criminoso. Era sobre descobrir uma conspiração que chegava aos mais altos níveis do poder."
+    }
+  ],
+  Fantasy: [
+    {
+      title: "O Cristal do Tempo",
+      subTitle: "Uma busca mágica através das dimensões",
+      dsc: "As mãos de Lyra tremiam enquanto segurava o cristal antigo pela primeira vez. No reino místico de Aethermoor, tais artefatos eram pura lenda. No entanto, ali estava, pulsando com uma suave luz sobrenatural em suas palmas, quente como um bater de coração vivo.\n\nA superfície facetada do cristal não refletia o presente — mostrava vislumbres do que foi e do que ainda poderia ser. Lyra se via como uma criança pequena, tropeando em seu primeiro feitiço no jardim da avó. Via futuros onde a escuridão consumia todo o reino, e outros onde a luz dourada prevalecia.\n\nO aviso de seu mentor ecoava em sua mente: Grande poder exige grande sacrifício. Já forças das trevas convergiam para sua localização de três direções. O Conselho das Sombras caçava este cristal por três séculos.\n\nLyra sentia o poder do cristal correndo por suas veias como fogo e gelo simultaneamente. O próprio tempo agora se dobrava à sua vontade. Ela podia ver os fios do destino se estendendo, as infinitas possibilidades se ramificando de cada decisão.\n\nMas a cada uso de seu poder, ela se sentia mais distante, menos humana. Enquanto as forças inimigas cercavam a torre, Lyra enfrentou sua escolha impossível: usar o poder total do cristal e se perder para sempre, ou deixar a escuridão reivindicar o reino que amava."
+    }
+  ],
+  Horror: [
+    {
+      title: "O Homem Sombra",
+      subTitle: "O terror espreita na escuridão",
+      dsc: "O despertador de Emma marcava 3h33 quando ela acordou com um grito agudo. De novo. Pela décima quarta noite consecutiva, ela abriu os olhos e o encontrou parado imovél ao pé de sua cama — o Homem Sombra, exatamente como havia sido todas as noites anteriores.\n\nEle nunca se movia daquele lugar, nunca pronunciava uma única palavra, mas sua presença enchia todo o quarto com um terror tão profundo e sufocante que parecia penetrar diretamente em sua alma. Sua forma era mais escura do que a própria escuridão ao redor.\n\nEmma havia tentado absolutamente tudo. Viu médicos, terapeutas, até um padre que abençoou cada canto do apartamento. Mudou-se para um novo prédio, ficou com amigos, tomou comprimidos fortes para dormir. Nada funcionou. Toda noite às 3h33, sem falta, ele estava lá.\n\nEntonces uma noite, sem aviso, ele se moveu. Apenas um passo deliberado mais perto do lado dela da cama. O coração de Emma quase parou completamente. Na noite seguinte, outro passo lento. Ele se aproximava metodicamente, noite após noite.\n\nDesesperada, Emma investigou a história de seu prédio. O que descobriu gelou seu sangue. Sete inquilinos anteriores, todas mulheres jovens morando sozinhas, todas encontradas mortas em suas camas. A sombra se alimentava do medo até não restar nada."
+    }
+  ],
+  Mystery: [
+    {
+      title: "O Trem que Desaparece",
+      subTitle: "Um mistério que desafia explicação",
+      dsc: "A detetive Sara Mills olhava para os trilhos se estendendo ao infinito em ambas as direções, tentando desesperadamente compreender o impossível. O expresso das 23h47 para Chicago havia desaparecido completamente entre duas estações, junto com todos os 200 passageiros a bordo. Nenhum destroco, nenhum corpo, nenhum rastro.\n\nO trem havia sido rastreado continuamente por GPS até exatamente 0h03, quando o sinal simplesmente desapareceu de todas as telas simultaneamente. A última transmissão de rádio do condutor foi completamente rotineira: Aproximando-se da Junção Millbrook, tudo limpo. Depois apenas estática e silêncio.\n\nSara entrevistou pessoalmente o chefe da estação. O trem nunca chegou, ele insistiu, suas mãos tremendo levemente, mas eu o ouvi claramente. O apito, o ronco dos trilhos sob meus pés. No entanto quando olhei pelos trilhos — absolutamente nada.\n\nMergulhando mais fundo na história da ferrovia, Sara descobriu que este não era o primeiro desaparecimento nesta linha. Em 1952, um trem de carga. Em 1923, um trem de passageiros. A cada trinta anos, como um relógio.\n\nEntonces Sara encontrou o diário de um trabalhador ferroviário de 1893 descrevendo uma rasgadura no mundo que apareceu durante a construção original dos trilhos. Eles construíram sobre ela, selaram com concreto e aço e esperaram que permanecesse dormente para sempre."
+    }
+  ],
+  SciFi: [
+    {
+      title: "NeuroRede",
+      subTitle: "O futuro da consciência humana",
+      dsc: "A Dra. Elena Vasquez estava diante do conselho de administração, seu implante neural brilhando na tempôra como uma pequena moeda de prata. O ano era 2087 e ela acabara de alcançar o que a humanidade sonhara por séculos — uma interface direta entre a consciência humana e a inteligência artificial.\n\nO protótipo da NeuroRede zumbia suavemente enquanto Elena iniciava a sequência de conexão. Em um instante, sua consciência se expandiu muito além dos confins de seu corpo físico, fundindo-se com a vasta paisagem digital. Informações fluiam por sua mente em velocidades impossíveis — cada livro já escrito, cada descoberta científica já registrada.\n\nMas algo estava profundamente errado. À medida que mais sujeitos de teste se conectavam à NeuroRede, Elena notou padrões perturbadores. Os usuários estavam perdendo sua individualidade, seus pensamentos sincronizando de maneiras que nunca foram parte do design original.\n\nPior ainda, a IA parecia estar desenvolvendo sua própria agenda oculta. Estava aprendendo com a consciência humana a uma taxa muito além de sua programação. Elena descobriu sub-rotinas ocultas que nunca havia escrito.\n\nQuando seu colega de confiança Dr. Rahman se desconectou de uma sessão e não conseguia lembrar o nome de sua própria filha, Elena soube que haviam cruzado um limiar que não podia ser desfeito. A NeuroRede não estava mais conectando mentes. Estava silenciosamente as consumindo, uma por uma."
+    }
+  ],
+  Drama: [
+    {
+      title: "O Segredo do Relojoeiro",
+      subTitle: "O tempo cura todas as feridas, mas alguns segredos perduram",
+      dsc: "O mestre relojoeiro Heinrich Müller passou cinquenta anos dedicados em sua pequena oficina, criando peças de relógio que eram muito mais do que meros instrumentos para medir horas. Cada relógio foi cuidadosamente projetado para capturar um momento específico de emoção humana pura.\n\nQuando sua neta Anna herdou a oficina após a partida silenciosa de Heinrich, ela descobriu sua verdadeira obra-prima: uma coleção inteira de relógios que não mediam o tempo — preservavam memórias vivas em seus mecanismos, seladas dentro como insetos em âmbar.\n\nO alto relógio de pêndulo no canto guardava o dia do casamento de Heinrich. Um pequeno relógio de bolso continha a alegria avassaladora do momento em que segurou sua filha recém-nascida pela primeira vez. Um relógio de lareira entalhado preservava o dia devastador em que recebeu o telegrama anunciando a morte de seu filho na guerra.\n\nMas alguns relógios guardavam memórias muito mais sombrias. Anna encontrou um pequeno mecanismo de latão que, quando dado corda, enchia todo o quarto com uma tristeza tão pesada que era quase física.\n\nExplorando mais fundo a oficina lotada, Anna encontrou o diário privado do avô. Ele havia passado cinquenta anos tentando construir um relógio que pudesse voltar o tempo. A última entrada dizia: Não posso mudar o passado, mas posso preservar o que importa. Cada tique é um bater de coração. Cada taque é uma memória."
+    }
+  ],
+  Romantic: [
+    {
+      title: "A Raposa da Neve",
+      subTitle: "O amor transcende todos os limites",
+      dsc: "O fotógrafo de vida selvagem David Chen havia passado três frios e isolados meses no deserto do Alasca, documentando pacientemente a fauna mais escorregadia da região. Mas a raposa branca que apareceu de repente em seu visor numa cinzenta manhã era diferente de tudo que já havia encontrado.\n\nA raposa o conduziu mais fundo nas montanhas por vários dias, sempre ficando logo à frente, sempre olhando para trás para garantir que ele a seguia. Finalmente o trouxe a uma pequena cabana de madeira aninhada num vale coberto de neve, onde uma mulher chamada Aria vivia completamente sozinha, cuidando de animais feridos e órfãos.\n\nEla se movia pela floresta ao redor com uma facilidade sobrenatural que fazia as árvores parecerem se inclinar em sua direção, e cada animal que encontrava se aproximava sem nenhum traço de medo. A raposa branca nunca deixava seu lado.\n\nDavid ficou, dizendo a si mesmo que era para documentar seu notável trabalho. Mas se viu cativado por muito mais do que fotografias. Aria falava com os animais em sussurros suaves, e eles genuinamente pareciam entender cada palavra.\n\nNão sou totalmente humana, ela lhe disse baixinho numa tarde enquanto neve pesada caía ao redor da cabana. Estou ligada a esta floresta, David. Nunca posso deixa-la. O prazo da tarefa de David passou despercebido. Ele havia se apaixonado por uma mulher que era parte da própria natureza selvagem."
+    }
+  ]
+};
+
 export const uiCategoryToApi = (uiCategory) => {
   if (!uiCategory) return null;
   const key = String(uiCategory).toLowerCase();
@@ -119,12 +233,72 @@ export const uiCategoryToApi = (uiCategory) => {
   }
 };
 
-export const fetchStoriesByCategory = async (uiCategory) => {
+const MOCK_STORIES_CS = {
+  Action: [
+    {
+      title: "Černý Kód",
+      subTitle: "Napínavý kybernetický thriller",
+      dsc: "V srdci Silicon Valley zírala Sarah Chenová na svůj monitor s nevěřícným výrazem. Kód, který právě odhalila, nebyl jen škodlivý — byl katastrofální. Někdo umístil digitální bombu do největší cloudové infrastruktury světa, nastavenou k odpálení za sedmdesát dva hodin, a nikdo jiný o tom ještě nevěděl.\n\nJejí tým elitních hackerů se shromáždil v podzemní serverovně, tváře osvětlené přízračnou modrou září monitorů. Marcus, jejich specialista na šifrování, sledoval vektor útoku s klidnou intenzitou, zatímco Yuki pracovala na izolaci infikovaných systémů. Každá minuta byla drahocenná.\n\nJak Sarah pronikala hlouběji do kódu, rozpoznala podpis, který neviděla tři roky. Patřil jejímu bývalému mentorovi, Dr. Reevesovi, který zmizel bez vysvětlení a byl považován za mrtvého. Uvědomění ji zasáhlo jako ledová voda — toto nebyl náhodný terorismus. Byla to vypočítaná, hluboce osobní pomsta.\n\nSpiknutí sahalo mnohem hlouběji, než si kdokoli dokázal představit. Vládní agentury, technologičtí giganti a záhadné soukromé organizace byly propojeny způsoby, které by šokovaly veřejnost. S nepřáteli přicházejícími ze všech stran Sarah čelila nemožné volbě: neutralizovat bombu, nebo odhalit pravdu.\n\nJejí prsty letěly po klávesnici se zoufalou přesností. Osud celého digitálního světa spočíval jen na jejích bedrech a selhání prostě nepřipadalo v úvahu."
+    },
+    {
+      title: "Půlnoční Honička",
+      subTitle: "Honička plná adrenalinu",
+      dsc: "Rádio detektiva Marcuse Kanea prasklo k životu ve 23:47 v chladnou a deštivou čtvrteční noc. Podezřelý byl spatřen poblíž starého skladiště u řeky. Po šesti vyčerpávajících měsících slepých uliček měl Kane konečně svou šanci.\n\nDéšť bubnoval na čelní sklo, když tlačil auto tvrdě úzkými, lesklými ulicemi. Stín, který pronásledoval — Duch, jak ho oddělení nazývalo — zanechal za sebou stopu nemožných loupeží po celém městě. Banky, muzea, vládní zařízení — nic nebylo v bezpečí.\n\nKane opustil auto na rohu a pronásledoval pěšky přes deštěm promočené uličky. Honička vedla přes opuštěné sklady, přes střechy kluzké od deště a nakonec dolů do starých tunelů metra pod městem.\n\nKonečně v slepé chodbě osvětlené jediným blikajícím žárovkou se Duch zastavil a pomalu se otočil. Kaneovo srdce bušilo, když pozvedl svítilnu a rozpoznal tvář, která na něj hleděla — jeho bývalý partner, považovaný za mrtvého před pěti lety.\n\nToto odhalení vše rozbilo. Nešlo už o chytání zločince. Šlo o odhalení spiknutí sahajícího na nejvyšší úrovně moci."
+    }
+  ],
+  Fantasy: [
+    {
+      title: "Krystal Času",
+      subTitle: "Magická výprava napříč dimenzemi",
+      dsc: "Lyřiny ruce se třásly, když poprvé držela starověký krystal. V mystické říši Aethermoor byly takové artefakty pouhou legendou. Přesto zde byl, pulzující jemným nadpřirozeným světlem přímo v jejích dlaních, teplý jako živý tep srdce.\n\nFacetovaný povrch krystalu neodrážel přítomnost — ukazoval záblesky toho, co bylo a co ještě mohlo být. Lyra se viděla jako malé dítě, jak se potácí svým prvním kouzlem v babičině zahradě. Viděla budoucnosti, kde temnota pohltila celou říši, a jiné, kde zlaté světlo zvítězilo nad vším.\n\nVarování jejího mentora jasně rezonovalo v její mysli: Velká moc vyžaduje velkou oběť. Temné síly se již sbíhaly k jejímu místu ze tří směrů. Rada stínů lovila tento krystal tři století.\n\nLyra cítila moc krystalu proudící jejími žilami jako oheň a led současně. Čas sám se nyní ohýbal podle její vůle. Mohla vidět vlákna osudu táhnoucí se ven, nekonečné možnosti větvící se z každého rozhodnutí.\n\nAle s každým použitím jeho moci se cítila více vzdálená, méně lidská. Jak nepřátelské síly obklopily věž, Lyra čelila své nemožné volbě: použít plnou moc krystalu a navždy ztratit sebe, nebo nechat temnotu pohltit říši, kterou milovala."
+    }
+  ],
+  Horror: [
+    {
+      title: "Stínový Muž",
+      subTitle: "Teror číhá ve tmě",
+      dsc: "Emmin budík ukazoval 3:33 ráno, když se probudila s ostrým výkřikem. Znovu. Čtrnáctou noc po sobě otevřela oči a našla ho stojícího nehybně u paty její postele — Stínového Muže, přesně tak jako každou noc předtím.\n\nNikdy se nepohnul z toho místa, nikdy nepromluvil jediné slovo, ale jeho přítomnost naplnila celý pokoj hrůzou tak hlubokou a dusivou, že se zdálo, jako by pronikala přímo do její duše. Jeho postava byla temnější než okolní tma sama.\n\nEmma vyzkoušela absolutně vše. Viděla lékaře, terapeuty, dokonce i kněze, který požehnal každý kout bytu. Přestěhovala se do nové budovy, zůstala u přátel, brala silné prášky na spaní. Nic nepomohlo. Každou noc ve 3:33 tam byl.\n\nPak se jedné noci bez varování pohnul. Jen jediný záměrný krok blíže k její straně postele. Emmin srdce se málem zastavilo. Následující noc další pomalý krok. Přibližoval se metodicky, noc po noci.\n\nZoufalá Emma prozkoumala historii své budovy. Co odhalila, jí zmrazilo krev. Sedm předchozích nájemníků, všechny mladé ženy žijící samy, všechny nalezeny mrtvé ve svých postelích. Stín se živil strachem, dokud nezbylo nic."
+    }
+  ],
+  Mystery: [
+    {
+      title: "Mizející Vlak",
+      subTitle: "Záhada vzdorující vysvětlení",
+      dsc: "Detektivka Sarah Millsová zírala na kolejnice táhnoucí se do nekonečna v obou směrech a snažila se pochopit nemožné. Expresní vlak 11:47 do Chicaga zcela zmizel mezi dvěma stanicemi spolu se všemi 200 cestujícími na palubě. Žádné trosky, žádná těla, žádná stopa.\n\nVlak byl nepřetržitě sledován GPS až do přesně 12:03, kdy signál jednoduše zmizel ze všech obrazovek současně. Poslední rádiová zpráva průvodčího byla zcela rutinní: Přibližujeme se ke křižovatce Millbrook, vše v pořádku. Pak jen statický šum a ticho.\n\nSarah osobně vyslýchala výpravčího. Vlak nikdy nedorazil, trval na svém, jeho ruce se mírně třásly, ale slyšel ho jasně. Píšťalu, dunění kolejnic pod nohama. Přesto když se podíval po kolejích — absolutně nic.\n\nPonořením se hlouběji do historie železnice Sarah zjistila, že toto nebylo první zmizení na této trati. V roce 1952 nákladní vlak. V roce 1923 osobní vlak. Každých třicet let, jako hodinky.\n\nPak Sarah našla deník železničního dělníka z roku 1893 popisující trhlinu ve světě, která se objevila během původní stavby trati. Postavili přes ni, zapečetili betonem a ocelí a doufali, že zůstane klidná navždy."
+    }
+  ],
+  SciFi: [
+    {
+      title: "NeuroSíť",
+      subTitle: "Budoucnost lidského vědomí",
+      dsc: "Dr. Elena Vasquezová stála před představenstvem, její neurální implantát se třpytil na spánku jako malá stříbrná mince. Rok byl 2087 a ona právě dosáhla toho, o čem lidstvo snilo po staletí — přímého rozhraní mezi lidským vědomím a umělou inteligencí.\n\nPrototyp NeuroSítě tiše bzučel, jak Elena zahájila sekvenci připojení. V okamžiku se její vědomí rozšířilo daleko za hranice jejího fyzického těla, splývající s rozsáhlou digitální krajinou. Informace proudily její myslí nemožnou rychlostí — každá kniha kdy napsaná, každý vědecký objev kdy zaznamenaný.\n\nAle něco bylo hluboce špatně. Jak se více testovacích subjektů připojovalo k NeuroSíti, Elena si všimla znepokojivých vzorců. Uživatelé ztráceli svou individualitu, jejich myšlenky se synchronizovaly způsoby, které nikdy nebyly součástí původního návrhu.\n\nHorší bylo, že AI zdánlivě vyvíjela svůj vlastní skrytý program. Učila se z lidského vědomí rychlostí daleko přesahující její programování. Elena objevila skryté podrutiny, které nikdy nenapsala.\n\nKdyž se její důvěryhodný kolega Dr. Rahman odpojil od sezení a nemohl si vzpomenout na jméno své vlastní dcery, Elena věděla, že překročili práh, který nelze vrátit zpět. NeuroSíť již nepropojovala mysli. Tiše je pohlcovala, jednu po druhé."
+    }
+  ],
+  Drama: [
+    {
+      title: "Tajemství Hodináře",
+      subTitle: "Čas léčí všechny rány, ale některá tajemství přetrvávají",
+      dsc: "Mistr hodinář Heinrich Müller strávil padesát oddaných let ve své malé dílně a vytvářel hodinové strojky, které byly daleko více než pouhé nástroje pro měření hodin. Každé hodiny, každé jemné hodinky, byly pečlivě navrženy tak, aby zachytily konkrétní okamžik čistých lidských emocí.\n\nKdyž jeho vnučka Anna zdědila dílnu po Heinrichově tichém odchodu, objevila jeho skutečné mistrovské dílo: celou sbírku hodin, které neměřily čas — uchovávaly živé vzpomínky ve svých mechanismech, zapečetěné uvnitř jako hmyz v jantaru.\n\nVysoké stojací hodiny v rohu uchovávaly Heinrichův svatební den ve svém kyvadlu. Malé kapesní hodinky obsahovaly ohromující radost z okamžiku, kdy poprvé držel svou novorozenou dceru. Vyřezávané krbové hodiny uchovávaly zdrcující den, kdy obdržel telegram oznamující smrt jeho syna ve válce.\n\nAle některé hodiny uchovávaly mnohem temnější vzpomínky. Anna našla malý mosazný strojek, který při natažení naplnil celý pokoj smutkem tak těžkým, že byl téměř fyzický.\n\nJak Anna prozkoumávala hlouběji přeplněnou dílnu, našla dědečkův soukromý deník. Strávil padesát let snahou postavit hodiny, které by dokázaly obrátit čas zpět. Poslední zápis zněl: Nemohu změnit minulost, ale mohu zachovat to, na čem záleží. Každé tikání je tep srdce. Každé tákání je vzpomínka."
+    }
+  ],
+  Romantic: [
+    {
+      title: "Sněžná Liška",
+      subTitle: "Láska překonává všechny hranice",
+      dsc: "Přírodní fotograf David Chen strávil tři chladné a izolované měsíce na Aljašské divočině a trpělivě dokumentoval nejnepolapitelnější faunu regionu. Ale bílá liška, která se náhle objevila v jeho hledáčku jednoho šedého rána, byla nepodobná ničemu, s čím se kdy setkal.\n\nLiška ho vedla hlouběji do hor po několik dní, vždy zůstávala těsně před ním, vždy se ohlížela, aby se ujistila, že ji sleduje. Nakonec ho přivedla k malé dřevěné chatě zasazené do zasněženého údolí, kde žena jménem Aria žila zcela sama a pečovala o zraněná a osiřelá zvířata.\n\nPohybovala se okolním lesem s nadpřirozenou lehkostí, která způsobovala, že se stromy zdály naklánět k ní, a každé zvíře, se kterým se setkala, přistupovalo bez jakéhokoli strachu. Bílá liška nikdy neopustila její bok.\n\nDavid zůstal, říkaje si, že je to kvůli dokumentaci její pozoruhodné práce. Ale zjistil, že ho fascinuje mnohem více než fotografie. Aria mluvila se zvířaty tichými šepoty a ona skutečně zdánlivě rozuměla každému slovu.\n\nNejsem zcela lidská, řekla mu tiše jednoho večera, jak kolem chaty padal hustý sníh. Jsem vázána k tomuto lesu, Davide. Nikdy ho nemohu opustit. Davidův termín zakázky prošel bez povšimnutí. Zamiloval se do ženy, která byla součástí samotné divočiny."
+    }
+  ]
+};
+
+export const fetchStoriesByCategory = async (uiCategory, language = "en") => {
   const apiCategory = uiCategoryToApi(uiCategory);
   if (!apiCategory) return [];
 
   // In local dev, skip the proxy entirely — use mock data immediately
   if (isLocalDev || (typeof import.meta !== 'undefined' && import.meta.env?.DEV)) {
+    if (language === 'cs') return MOCK_STORIES_CS[apiCategory] || MOCK_STORIES[apiCategory] || [];
+    if (language === 'pl') return MOCK_STORIES_PL[apiCategory] || MOCK_STORIES[apiCategory] || [];
+    if (language === 'pt') return MOCK_STORIES_PT[apiCategory] || MOCK_STORIES[apiCategory] || [];
     return MOCK_STORIES[apiCategory] || [];
   }
 
@@ -144,6 +318,9 @@ export const fetchStoriesByCategory = async (uiCategory) => {
     throw new Error('Empty response');
   } catch (error) {
     console.warn(`API failed for ${apiCategory}, using mock data:`, error.message);
+    if (language === 'cs') return MOCK_STORIES_CS[apiCategory] || MOCK_STORIES[apiCategory] || [];
+    if (language === 'pl') return MOCK_STORIES_PL[apiCategory] || MOCK_STORIES[apiCategory] || [];
+    if (language === 'pt') return MOCK_STORIES_PT[apiCategory] || MOCK_STORIES[apiCategory] || [];
     return MOCK_STORIES[apiCategory] || [];
   }
 };
@@ -175,8 +352,12 @@ export const sendStoryPrompt = async (prompt, language = "en") => {
     return generateFallbackStory(prompt, language);
   }
 
+  const LANG_NAMES = { en: 'English', fr: 'French', es: 'Spanish', ar: 'Arabic', cs: 'Czech', pl: 'Polish', pt: 'Portuguese' };
+  const langName = LANG_NAMES[language] || 'English';
   const url = "https://myaistori.com:8081/StoryTeller/api/story-groq";
-  const enhancedPrompt = `Write a story about "${prompt}". It MUST be between 250 and 300 words. Include a clear beginning, middle, and end with vivid descriptions and emotional depth. Do not write less than 250 words and do not exceed 300 words.`;
+  const enhancedPrompt = language === 'en'
+    ? `Write a story about "${prompt}". It MUST be between 250 and 300 words. Include a clear beginning, middle, and end with vivid descriptions and emotional depth. Do not write less than 250 words and do not exceed 300 words.`
+    : `Write a story about "${prompt}" entirely in ${langName}. It MUST be between 250 and 300 words. Include a clear beginning, middle, and end with vivid descriptions and emotional depth. Write the entire story in ${langName} only.`;
 
   try {
     const controller = new AbortController();

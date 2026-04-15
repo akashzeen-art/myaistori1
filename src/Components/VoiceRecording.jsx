@@ -429,7 +429,7 @@ const VoiceRecording = ({ onBack }) => {
       const prompt = (transcriptRef.current || inputValue).trim();
       if (prompt) {
         setIsGenerating(true);
-        const langCode = { 'EN': 'en', 'FR': 'fr', 'ES': 'es', 'AR': 'ar' }[language] || 'en';
+        const langCode = { 'EN': 'en', 'FR': 'fr', 'ES': 'es', 'AR': 'ar', 'CS': 'cs', 'PL': 'pl', 'PT': 'pt' }[language] || 'en';
         const text = await sendStoryPrompt(prompt, langCode);
         setIsGenerating(false);
         if (text) {
@@ -589,7 +589,7 @@ const VoiceRecording = ({ onBack }) => {
               const prompt = inputValue.trim();
               if (!prompt) return;
               setIsGenerating(true);
-              const langCode = { 'EN': 'en', 'FR': 'fr', 'ES': 'es', 'AR': 'ar' }[language] || 'en';
+              const langCode = { 'EN': 'en', 'FR': 'fr', 'ES': 'es', 'AR': 'ar', 'CS': 'cs', 'PL': 'pl', 'PT': 'pt' }[language] || 'en';
               const text = await sendStoryPrompt(prompt, langCode);
               setIsGenerating(false);
               if (text) {

@@ -20,15 +20,18 @@ const joinStoryText = (story) => {
 // gender field is used to pick Male vs Female when both share the same lang tag
 
 const VOICE_OPTIONS = [
-  { id: "default",      label: "Default Voice",                   group: "EN", lang: null,    gender: null,     nameMatch: null                    },
-  { id: "en-us",        label: "Google US English (en-US)",        group: "EN", lang: "en-US", gender: null,     nameMatch: "Google US English"     },
-  { id: "es",           label: "Google Spanish (es-ES)",           group: "ES", lang: "es-ES", gender: null,     nameMatch: "Google español"        },
-  { id: "fr",           label: "Google French (fr-FR)",            group: "FR", lang: "fr-FR", gender: null,     nameMatch: "Google français"       },
+  { id: "default",      label: "Default Voice",                   group: "EN", lang: null,    gender: null, nameMatch: null                    },
+  { id: "en-us",        label: "Google US English (en-US)",        group: "EN", lang: "en-US", gender: null, nameMatch: "Google US English"     },
+  { id: "es",           label: "Google Spanish (es-ES)",           group: "ES", lang: "es-ES", gender: null, nameMatch: "Google español"        },
+  { id: "fr",           label: "Google French (fr-FR)",            group: "FR", lang: "fr-FR", gender: null, nameMatch: "Google français"       },
+  { id: "cs",           label: "Czech (cs-CZ)",                    group: "CS", lang: "cs-CZ", gender: null, nameMatch: null                    },
+  { id: "pl",           label: "Polish (pl-PL)",                   group: "PL", lang: "pl-PL", gender: null, nameMatch: null                    },
+  { id: "pt",           label: "Portuguese (pt-PT)",               group: "PT", lang: "pt-PT", gender: null, nameMatch: null                    },
 ];
 
-const LANG_TO_DEFAULT_VOICE = { EN: "en-us", FR: "fr", ES: "es" };
-const LANG_CODE  = { EN: "en", FR: "fr", ES: "es", AR: "ar" };
-const LANG_BCP47 = { EN: "en-US", FR: "fr-FR", ES: "es-ES", AR: "ar-SA" };
+const LANG_TO_DEFAULT_VOICE = { EN: "en-us", FR: "fr", ES: "es", CS: "cs", PL: "pl", PT: "pt" };
+const LANG_CODE  = { EN: "en", FR: "fr", ES: "es", AR: "ar", CS: "cs", PL: "pl", PT: "pt" };
+const LANG_BCP47 = { EN: "en-US", FR: "fr-FR", ES: "es-ES", AR: "ar-SA", CS: "cs-CZ", PL: "pl-PL", PT: "pt-PT" };
 
 // ─── pre-written story text for non-English TTS ──────────────────────────────
 // Browser TTS needs actual text in the target language to speak correctly.
@@ -41,9 +44,15 @@ const SPEECH_TEXT = {
   ar: `في قلب المدينة، اكتشفت المحققة سارة رسالة غامضة مُدسَّة تحت بابها. لم يكن على الظرف اسم ولا عنوان، بل مجرد رمز منقوش في شمع أحمر داكن.\n\nفتحت الرسالة بحذر. كانت الكلمات بداخلها مكتوبة بخط اليد، بخط مرتجف لكنه دقيق. كان شخص ما قد اختفى. شخص مهم. وقد ترك هذا الشخص أدلة لا تستطيع فهمها سوى سارة.\n\nارتدت معطفها وخرجت إلى الليل البارد. كانت الشوارع مقفرة، وكانت أعمدة الإنارة تلقي بظلال طويلة على الأرصفة المبللة. كل خطوة كانت تقربها من حقيقة ربما لم تكن مستعدة لمواجهتها.\n\nفي نهاية زقاق مظلم، وجدت الباب المشار إليه في الرسالة. طرقت ثلاث مرات. صمت. ثم فُتح الباب ببطء، ليكشف عن وجه عرفته على الفور، وجه شريكها القديم الذي اختفى منذ عامين.\n\nابتسم لها بحزن. كانت لديه إجابات. لكن تلك الإجابات ستغير كل شيء. أخذت سارة نفساً عميقاً ودخلت، وهي تعلم أن حياتها لن تكون كما كانت بعد تلك الليلة أبداً.`,
 };
 
+const SPEECH_TEXT_EXTRA = {
+  cs: `V srdci města detektivka Klára objevila záhadný dopis podstrčený pod její dveře. Obálka nenesla žádné jméno ani adresu — pouze symbol vyražený do tmavě červeného vosku.\n\nOpatrně dopis otevřela. Slova uvnitř byla psána rukou, chvějícím se, ale přesným písmem. Někdo zmizel. Někdo důležitý. A tato osoba zanechala stopy, které dokázala rozluštit jen Klára.\n\nOblékla si kabát a vyšla do chladné noci. Ulice byly pusté, pouliční lampy vrhaly dlouhé stíny na mokré dlažební kameny. Každý krok ji přibližoval k pravdě, na kterou možná nebyla připravena.\n\nNa konci temné uličky našla dveře zmíněné v dopise. Třikrát zaklepala. Ticho. Pak se dveře pomalu otevřely a odhalily tvář, kterou okamžitě poznala — jejího bývalého partnera, který zmizel před dvěma lety.\n\nUsmál se na ni smutně. Měl odpovědi. Ale ty odpovědi měly změnit vše. Klára se zhluboka nadechla a vstoupila dovnitř, vědomá si, že její život už nikdy nebude stejný.`,
+  pl: `W sercu miasta detektyw Klara odkryła tajemniczy list wsunięty pod jej drzwi. Koperta nie miała żadnego imienia ani adresu — tylko symbol wyryty w ciemnoczerwonym wosku.\n\nOstrożnie otworzyła list. Słowa w środku były napisane odręcznie, drżącym, ale precyzyjnym pismem. Ktoś zniknął. Ktoś ważny. I ta osoba zostawiła wskazówki, które tylko Klara mogła zrozumieć.\n\nWłożyła płaszcz i wyszła w chłodną noc. Ulice były opustoszałe, latarnie rzucały długie cienie na mokre bruki. Każdy krok przybliżał ją do prawdy, na którą może nie była gotowa.\n\nNa końcu ciemnej uliczki znalazła drzwi wskazane w liście. Zapukała trzy razy. Cisza. Potem drzwi powoli się otworzyły, odsłaniając twarz, którą natychmiast rozpoznała — jej byłego partnera, który zniknął dwa lata temu.\n\nUśmiechnął się do niej smutno. Miał odpowiedzi. Ale te odpowiedzi miały zmienić wszystko. Klara wzięła głęboki oddech i weszła, wiedząc, że jej życie nigdy nie będzie takie samo.`,
+  pt: `No coração da cidade, a detetive Clara descobriu uma carta misteriosa deslizada sob sua porta. O envelope não tinha nome nem endereço — apenas um símbolo gravado em cera vermelha escura.\n\nEla abriu a carta com cuidado. As palavras dentro estavam escritas à mão, com uma letra trêmula mas precisa. Alguém havia desaparecido. Alguém importante. E essa pessoa havia deixado pistas que só Clara poderia entender.\n\nEla colocou o casaco e saiu para a noite fria. As ruas estavam desertas, os postes projetavam longas sombras sobre as calçadas molhadas. Cada passo a aproximava de uma verdade que talvez não estivesse pronta para enfrentar.\n\nNo final de um beco escuro, ela encontrou a porta indicada na carta. Bateu três vezes. Um silêncio. Então a porta se abriu lentamente, revelando um rosto que ela reconheceu imediatamente — seu antigo parceiro, desaparecido há dois anos.\n\nEle sorriu para ela tristemente. Tinha respostas. Mas as respostas mudariam tudo. Clara respirou fundo e entrou, sabendo que sua vida nunca mais seria a mesma.`,
+};
+
 const getSpeechText = (englishText, langCode) => {
   if (!langCode || langCode === "en") return englishText;
-  return SPEECH_TEXT[langCode] || englishText;
+  return SPEECH_TEXT[langCode] || SPEECH_TEXT_EXTRA[langCode] || englishText;
 };
 
 // ─── voice resolution ─────────────────────────────────────────────────────────
@@ -316,7 +325,8 @@ const StoryModal = ({ isOpen, onClose, category, preferredTitle, rawText }) => {
     }
 
     setGeneratedStories([]);
-    fetchStoriesByCategory(category)
+    const langCode = LANG_CODE[language] || "en";
+    fetchStoriesByCategory(category, langCode)
       .then((list) => {
         if (!mounted) return;
         const normalize = (s) => ({
@@ -335,7 +345,7 @@ const StoryModal = ({ isOpen, onClose, category, preferredTitle, rawText }) => {
       .finally(() => mounted && setIsLoading(false));
 
     return () => { mounted = false; };
-  }, [isOpen, category, preferredTitle, rawText]);
+  }, [isOpen, category, preferredTitle, rawText, language]);
 
   // ── reset typing + speech when story/language changes ────────────────────────
   useEffect(() => {

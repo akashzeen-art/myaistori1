@@ -25,6 +25,7 @@ const FeaturedStories = () => {
     {
       id: "phoenix-reborn",
       title: t.featuredStories.titles.phoenixReborn,
+      categoryKey: "fantasy",
       category: t.topStories.categories.fantasy,
       image: phoenixReborn,
       author: "AI teller",
@@ -36,6 +37,7 @@ const FeaturedStories = () => {
     {
       id: "digital-ghost",
       title: t.featuredStories.titles.digitalGhost,
+      categoryKey: "scifi",
       category: t.topStories.categories.scifi,
       image: digitalGhost,
       author: "AI teller",
@@ -47,6 +49,7 @@ const FeaturedStories = () => {
     {
       id: "doll-maker",
       title: t.featuredStories.titles.dollMaker,
+      categoryKey: "horror",
       category: t.topStories.categories.horror,
       image: dollMaker,
       author: "AI teller",
@@ -58,6 +61,7 @@ const FeaturedStories = () => {
     {
       id: "mirror-clue",
       title: t.featuredStories.titles.mirrorClue,
+      categoryKey: "mystery",
       category: t.topStories.categories.mystery,
       image: mirrorClue,
       author: "AI teller",
@@ -69,6 +73,7 @@ const FeaturedStories = () => {
     {
       id: "feather-moon-bird",
       title: t.featuredStories.titles.featherMoonBird,
+      categoryKey: "romantic",
       category: t.stories.categories.romantic,
       image: featherMoonBird,
       author: "AI teller",
@@ -80,6 +85,7 @@ const FeaturedStories = () => {
     {
       id: "skyfall-rescue",
       title: t.featuredStories.titles.skyfallRescue,
+      categoryKey: "action",
       category: t.topStories.categories.action,
       image: skyfallRescue,
       author: "AI teller",
@@ -141,7 +147,7 @@ const FeaturedStories = () => {
                 <div
                   key={story.id}
                   className={styles.storyCard}
-                  onClick={() => { setModalCategory(story.category); setModalTitle(story.title); setModalOpen(true); }}
+                  onClick={() => { setModalCategory(story.categoryKey); setModalTitle(story.title); setModalOpen(true); }}
                 >
                   <div className={styles.imageWrapper}>
                     <img
@@ -183,7 +189,7 @@ const FeaturedStories = () => {
                     <div className={styles.actionRow}>
                       <button
                         className={styles.readButton}
-                        onClick={(e) => { e.stopPropagation(); setModalCategory(story.category); setModalTitle(story.title); setModalOpen(true); }}
+                        onClick={(e) => { e.stopPropagation(); setModalCategory(story.categoryKey); setModalTitle(story.title); setModalOpen(true); }}
                       >
                         {t.featuredStories.readNow}
                       </button>

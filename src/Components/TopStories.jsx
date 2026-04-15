@@ -23,6 +23,7 @@ const TopStories = () => {
     {
       id: "stormborn",
       title: t.topStories.titles.stormborn,
+      categoryKey: "fantasy",
       category: t.topStories.categories.fantasy,
       image: stormborn,
       rating: 4.9,
@@ -32,6 +33,7 @@ const TopStories = () => {
     {
       id: "code-black",
       title: t.topStories.titles.codeBlack,
+      categoryKey: "action",
       category: t.topStories.categories.action,
       image: codeBlack,
       rating: 4.8,
@@ -41,6 +43,7 @@ const TopStories = () => {
     {
       id: "chron-rewind",
       title: t.topStories.titles.chronRewind,
+      categoryKey: "scifi",
       category: t.topStories.categories.scifi,
       image: chronRewind,
       rating: 4.7,
@@ -50,6 +53,7 @@ const TopStories = () => {
     {
       id: "room-404",
       title: t.topStories.titles.room404,
+      categoryKey: "horror",
       category: t.topStories.categories.horror,
       image: room404,
       rating: 4.6,
@@ -59,6 +63,7 @@ const TopStories = () => {
     {
       id: "clockmaker-secret",
       title: t.topStories.titles.clockmakerSecret,
+      categoryKey: "drama",
       category: t.topStories.categories.drama,
       image: clockmakerSecret,
       rating: 4.9,
@@ -68,6 +73,7 @@ const TopStories = () => {
     {
       id: "midnight-caller",
       title: t.topStories.titles.midnightCaller,
+      categoryKey: "mystery",
       category: t.topStories.categories.mystery,
       image: midnightCaller,
       rating: 4.5,
@@ -93,7 +99,7 @@ const TopStories = () => {
                 key={story.id}
                 className={styles.storyCard}
                 onClick={() => {
-                  setModalCategory(story.category);
+                  setModalCategory(story.categoryKey);
                   setModalTitle(story.title);
                   setModalOpen(true);
                 }}
@@ -130,7 +136,7 @@ const TopStories = () => {
                     className={styles.readButton}
                     onClick={(e) => {
                       e.stopPropagation();
-                      setModalCategory(story.category);
+                      setModalCategory(story.categoryKey);
                       setModalTitle(story.title);
                       setModalOpen(true);
                     }}
