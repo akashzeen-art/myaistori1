@@ -355,27 +355,44 @@ export const sendStoryPrompt = async (prompt, language = "en") => {
   const LANG_NAMES = { en: 'English', fr: 'French', es: 'Spanish', ar: 'Arabic', cs: 'Czech', pl: 'Polish', pt: 'Portuguese' };
   const langName = LANG_NAMES[language] || 'English';
   const url = "https://myaistori.com:8081/StoryTeller/api/story-groq";
-  const openingStyles = [
-    "Start with a striking object, image, or sensory detail — no character name yet.",
-    "Start with a line of dialogue that drops the reader into the middle of a moment.",
-    "Start with a character making a small, specific decision that will matter later.",
-    "Start with an unusual fact, statistic, or observation about the world of the story.",
-    "Start in the middle of action — something is already happening when the story begins.",
-    "Start with a short, blunt statement that immediately creates mystery or tension."
-  ];
-  const chosenStyle = openingStyles[Math.floor(Math.random() * openingStyles.length)];
-  const structureInstruction = `
-Opening style for paragraph 1: ${chosenStyle}
-Structure the story in exactly 5 paragraphs:
-1. OPENING: Use the opening style above. Introduce the main character with a specific name and one vivid detail about who they are.
-2. INCITING INCIDENT: Something disrupts their normal life — a discovery, challenge, or unexpected event tied to "${prompt}".
-3. RISING ACTION & CONFLICT: The character faces real obstacles. Show their emotions, decisions, and what is at stake.
-4. CLIMAX: The most intense moment — a crucial choice or direct confrontation.
-5. REALISTIC ENDING: A grounded conclusion showing aftermath and how the character has changed. No fairy-tale endings.
-Each paragraph: 3–5 sentences. Total: 280–320 words. No titles, no headings — story text only.`;
+
+  const storyInstruction = `You are a professional storyteller.
+Generate a complete story using the following inputs:
+Title: ${prompt}
+Genre: (based on the title, choose the most fitting genre)
+
+Instructions:
+- Create an original story based on the provided title and genre.
+- Begin directly with the story title on the first line.
+- Write in the style of a traditional storyteller narrating a tale.
+- Use simple, engaging, and immersive language suitable for readers of all ages.
+- Tell the story in chronological order from beginning to end.
+- Write entirely in short paragraphs containing 1–3 sentences each.
+- Place important actions, emotional moments, discoveries, and dialogue in separate paragraphs.
+- Use natural dialogue where appropriate.
+- Ensure the story feels like a real book rather than a summary or screenplay.
+- Create a strong opening that immediately captures attention.
+- Develop memorable characters with clear goals and emotions.
+- Build suspense, curiosity, excitement, wonder, fear, hope, sadness, joy, or other emotions appropriate to the genre.
+- Include a clear beginning, conflict, rising action, climax, and satisfying ending.
+- Adapt the tone, atmosphere, and emotions according to the genre.
+- Show events through actions and dialogue rather than explaining them.
+- Maintain smooth transitions between paragraphs.
+- Keep the narrative flowing naturally.
+- Do not use chapter headings.
+- Do not use bullet points.
+- Do not use screenplay formatting.
+- Do not summarize the story.
+- Do not explain the story.
+- Output only the story.
+
+The final story should feel like a professionally narrated storybook that keeps the reader emotionally engaged from the first paragraph to the last.`;
+
   const enhancedPrompt = language === 'en'
-    ? `Write an original, emotionally engaging story inspired by: "${prompt}".${structureInstruction}`
-    : `Write an original, emotionally engaging story inspired by: "${prompt}". Write the ENTIRE story in ${langName} only.${structureInstruction}`;
+    ? storyInstruction
+    : `${storyInstruction}
+
+IMPORTANT: Write the ENTIRE story in ${langName} only. Every word, every sentence, every piece of dialogue must be in ${langName}. Do not use any English.`;
 
   try {
     const controller = new AbortController();
@@ -390,8 +407,8 @@ Each paragraph: 3–5 sentences. Total: 280–320 words. No titles, no headings 
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const data = await res.json().catch(() => null);
     const text = extractStoryText(data);
-    if (text && countWords(text) >= 250 && countWords(text) <= 300) return text;
-    if (text && countWords(text) > 300) return text.split(/\s+/).slice(0, 290).join(' ') + '.';
+    if (text && countWords(text) >= 150) return text;
+    if (text && countWords(text) > 0) return text;
   } catch (error) {
     console.warn(`Story API failed:`, error.message);
   }
