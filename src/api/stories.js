@@ -355,14 +355,24 @@ export const sendStoryPrompt = async (prompt, language = "en") => {
   const LANG_NAMES = { en: 'English', fr: 'French', es: 'Spanish', ar: 'Arabic', cs: 'Czech', pl: 'Polish', pt: 'Portuguese' };
   const langName = LANG_NAMES[language] || 'English';
   const url = "https://myaistori.com:8081/StoryTeller/api/story-groq";
+  const openingStyles = [
+    "Start with a striking object, image, or sensory detail — no character name yet.",
+    "Start with a line of dialogue that drops the reader into the middle of a moment.",
+    "Start with a character making a small, specific decision that will matter later.",
+    "Start with an unusual fact, statistic, or observation about the world of the story.",
+    "Start in the middle of action — something is already happening when the story begins.",
+    "Start with a short, blunt statement that immediately creates mystery or tension."
+  ];
+  const chosenStyle = openingStyles[Math.floor(Math.random() * openingStyles.length)];
   const structureInstruction = `
+Opening style for paragraph 1: ${chosenStyle}
 Structure the story in exactly 5 paragraphs:
-1. CHARACTER INTRODUCTION: Introduce the main character(s) with a name, personality, and their world. Set the scene vividly.
-2. INCITING INCIDENT: Something disrupts their normal life — a discovery, a challenge, or an unexpected event directly tied to "${prompt}".
-3. RISING ACTION & CONFLICT: The character faces obstacles, makes decisions, and the stakes grow. Show their emotions and struggles.
-4. CLIMAX: The most intense moment — the character must make a crucial choice or face their biggest challenge head-on.
-5. REALISTIC ENDING: A satisfying, grounded conclusion. Show the aftermath and how the character has changed. Avoid fairy-tale endings — keep it human and believable.
-Each paragraph must be 3–5 sentences. Total story: 280–320 words. No titles, no headings — only the story text.`;
+1. OPENING: Use the opening style above. Introduce the main character with a specific name and one vivid detail about who they are.
+2. INCITING INCIDENT: Something disrupts their normal life — a discovery, challenge, or unexpected event tied to "${prompt}".
+3. RISING ACTION & CONFLICT: The character faces real obstacles. Show their emotions, decisions, and what is at stake.
+4. CLIMAX: The most intense moment — a crucial choice or direct confrontation.
+5. REALISTIC ENDING: A grounded conclusion showing aftermath and how the character has changed. No fairy-tale endings.
+Each paragraph: 3–5 sentences. Total: 280–320 words. No titles, no headings — story text only.`;
   const enhancedPrompt = language === 'en'
     ? `Write an original, emotionally engaging story inspired by: "${prompt}".${structureInstruction}`
     : `Write an original, emotionally engaging story inspired by: "${prompt}". Write the ENTIRE story in ${langName} only.${structureInstruction}`;
@@ -504,15 +514,25 @@ They had an honest conversation about it on the last night of the market, sittin
 Three months later, Thomas accepted a project in her city — not because of her, he was careful to say, but not entirely not because of her either. He texted to let her know. She replied suggesting they get better coffee this time. It was not a grand gesture. It was two people deciding, carefully and with full awareness of the risks, to try.`
     ],
     general: [
-      `Sam Okafor was the kind of person who fixed things — appliances, schedules, other people's arguments — and had built a quiet, competent life around being reliably useful. He worked as a building supervisor in a mid-sized city, knew every tenant by name, and prided himself on the fact that nothing in his building stayed broken for long. He was not someone things happened to. He was someone who handled things.
+      `The letter arrived on a Wednesday, written in handwriting that Nora did not recognise, addressed to a version of herself she had spent years trying to leave behind. It had been forwarded three times — she had moved often — and the postmark was eighteen months old. She almost threw it away without reading it. The subject was "${prompt}", a name she had not spoken aloud since she was nineteen years old, and the first line read: "You deserve to know what actually happened."
 
-The envelope slipped under his office door on a Thursday morning contained a single photograph and a handwritten address. The photograph showed a building he had never seen, and the address was in a neighborhood he had no connection to. At the bottom, in small neat letters: "${prompt} — you were there." He had no idea what that meant.
+She read it standing at the kitchen counter, still in her coat. The woman who had written it was her mother's oldest friend, someone Nora had met once at a funeral and never seen again. The letter was four pages long. It was careful, honest, and it dismantled the version of events Nora had built her entire adult self around.
 
-The address led him to a community center that had been quietly serving the neighborhood for thirty years. The director, a woman named Adaeze, showed him records from a crisis response program that had operated there in the late nineties. Sam's name appeared in those records as a child who had passed through. He had no memory of it — he had been four years old.
+She spent the next two weeks doing nothing with it — going to work, making meals, talking to her flatmate about ordinary things. This was not avoidance, exactly. It was the way she had always processed things that mattered: by letting them settle before she decided what to do.
 
-What followed was six weeks of careful research, conversations with people he had never met, and a slow reconstruction of a period in his life that had been completely invisible to him. The story was not dramatic. It was ordinary in the way that most important things are: a family in difficulty, people who helped, a child who grew up not knowing that strangers had once made a significant difference.
+What she eventually did was drive to the small town three hours north where the woman still lived, sit at her kitchen table, and ask every question she had been afraid to ask for twenty years. Some answers were harder than the ones she had invented. Some were easier. None of them were what she expected. The truth about "${prompt}" was smaller than the myth she had made of it, and that, somehow, was the most difficult thing to accept.
 
-Sam started volunteering at the center the following month. He did not tell many people about it. Some things, he decided, didn't need to be explained — they just needed to be continued.`
+She drove home in the early evening with the windows down, even though it was cold. She called her mother the following morning — not to accuse her, not to forgive her, but simply to talk, for the first time in years, without pretending. Her mother picked up on the second ring.`,
+
+      `"Just one question," said the detective, setting a photograph on the table between them. "What is ${prompt}, and why does your name appear next to it in a file that officially does not exist?" The man across the table — mild, middle-aged, a secondary school history teacher named Paul — looked at the photograph for a long time before he answered. His answer took the rest of the afternoon and changed the direction of the investigation entirely.
+
+Paul had stumbled onto the file three years earlier while researching a local history project for his Year 10 class. He had thought it was interesting, made a copy, and forgotten about it. He had not known that making the copy would place him on a watchlist maintained by people who had very specific reasons for wanting that information to remain buried.
+
+The detective's name was Reyes. She had been assigned the case expecting bureaucratic obstruction and a quick dead end. Instead she found Paul, who had three years of meticulous notes, cross-referenced sources, and the particular stubbornness of someone who taught teenagers for a living and was therefore immune to being ignored.
+
+They worked the case together for four months — unofficial, off-hours, using Paul's school library after six PM because it had the best archive access in the county. The people they were looking for were not powerful in the dramatic sense. They were mid-level, careful, and had simply been left alone long enough to become dangerous.
+
+The case broke on a Tuesday, quietly, without headlines. Two officials resigned. One document was declassified. Paul used the whole thing as a case study for his Year 10 class the following term, with all the names changed. Reyes came in to answer questions. Fourteen-year-olds, it turned out, asked better questions than most people in the room had expected.`
     ]
   };
   
